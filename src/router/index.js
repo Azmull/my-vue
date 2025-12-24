@@ -92,6 +92,11 @@ const router = createRouter({
       name:'pinia',
       component:()=>import('../views/12-pinia.vue')
     },
+    {
+      path:'/axios',
+      name:'axios',
+      component:()=>import('../views/13-axios.vue')
+    },
 
 
 

@@ -24,6 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink :to="{name:'component'}">10-元件</RouterLink>
         <RouterLink :to="{name:'env'}">11-全域變數</RouterLink>
         <RouterLink :to="{name:'pinia'}">12-Pinia 狀態管理</RouterLink>
+        <RouterLink :to="{name:'axios'}">13-axios</RouterLink>
 
       </nav>
     </div>
@@ -32,30 +33,30 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <style scoped>
-/* header {
+header {
   line-height: 1.5;
   max-height: 100vh;
-} */
+}
 
-/* .logo {
+.logo {
   display: block;
   margin: 0 auto 2rem;
-} */
+}
 
-/* nav {
+nav {
   width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
-} */
+}
 
-/* nav a.router-link-exact-active {
+nav a.router-link-exact-active {
   color: var(--color-text);
-} */
+}
 
-/* nav a.router-link-exact-active:hover {
+nav a.router-link-exact-active:hover {
   background-color: transparent;
-} */
+}
 
 nav a {
   display: inline-block;
@@ -63,11 +64,11 @@ nav a {
   border-left: 1px solid var(--color-border);
 }
 
-/* nav a:first-of-type {
+nav a:first-of-type {
   border: 0;
-} */
+}
 
-/* @media (min-width: 1024px) {
+ @media (min-width: 1024px) { 
   header {
     display: flex;
     place-items: center;
@@ -92,5 +93,5 @@ nav a {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-} */
+} 
 </style>
