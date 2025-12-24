@@ -1,7 +1,7 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
-export const useCounterStore = defineStore('myCounter',()=>{
+export const usePersistStore = defineStore('myCounterPersist',()=>{
   const count = ref(0)
 
   function increment(){
@@ -11,4 +11,6 @@ export const useCounterStore = defineStore('myCounter',()=>{
     count.value --;
   }
   return{count, increment, decrement}
-})
+},
+  {persist: true}
+)
