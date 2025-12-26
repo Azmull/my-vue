@@ -2,6 +2,7 @@
 import{ref}from "vue"
 const weekday = ref(2)
 </script>
+
 <template>
   <h2>05-條件渲染</h2>
   今天星期幾: <input type="number" min="1" max="7" v-model="weekday">
