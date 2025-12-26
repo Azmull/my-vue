@@ -6,6 +6,7 @@ import ProductItem from '@/components/Product.vue'
 
 const responseData = ref('')
 const products = ref([])
+
 function btnGet(){
   axios.get(import.meta.env.VITE_API_URL+'/Test')
   .then(resp=>{
