@@ -29,7 +29,9 @@ import HelloWorld from './components/HelloWorld.vue'
       </nav>
     </div>
   </header>
-  <RouterView/>
+  <main class="content">
+    <RouterView/>
+  </main>
 </template>
 
 <style scoped>
@@ -68,12 +70,14 @@ nav a:first-of-type {
   border: 0;
 }
 
- @media (min-width: 1024px) { 
+ @media (min-width: 1024px) {
   header {
-    display: flex;
+    /* display: flex; */
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    /* padding-right: calc(var(--section-gap) / 2); */
   }
+
+  header .wrapper { /* 改成 block 或 column 排列 */ display: block; }
 
   .logo {
     margin: 0 2rem 0 0;
@@ -92,6 +96,5 @@ nav a:first-of-type {
 
     padding: 1rem 0;
     margin-top: 1rem;
-  }
-} 
+  }}
 </style>

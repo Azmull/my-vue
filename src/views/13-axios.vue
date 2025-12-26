@@ -1,6 +1,6 @@
 <script setup>
 import axios from 'axios';
-import { ref, reactive } from 'vue';
+import { ref } from 'vue';
 import ProductItem from '@/components/Product.vue'
 // https://localhost:7193/api/Test
 
@@ -68,8 +68,9 @@ function btnDelete(id){
   <div>
     搭配迴圈&子元件
     <br>
-    <ProductItem 
+    <ProductItem
       v-for="item in products"
+      :key="item.id"
       :name="item.name"
       :price="item.price"
       >
