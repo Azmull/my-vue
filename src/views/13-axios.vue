@@ -58,7 +58,7 @@ function btnDelete(id){
     <button @click="btnGet()">GET</button>
     <button @click="btnPost()">POST</button>
     <button @click="btnPut(3)">PUT</button>
-    <button @click="btnDelete(20)">DELETE</button>
+    <button @click="btnDelete(12)">DELETE</button>
   </div>
   <div>
     回傳結果:

@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue';
 
-
 console.log(window.js_global_title)
 const jstitle = ref('')
 jstitle.value = window.js_global_title
