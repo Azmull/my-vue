@@ -11,26 +11,27 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/routerParams">01-動態參數傳遞</RouterLink>
         <RouterLink to="/routerParams1/123">01-動態參數傳遞(123)</RouterLink>
-        <RouterLink :to="{name:'routerQueryName', query: {keyword:'switch5',page:3}}">01-路由參數傳遞-查詢參數(query)</RouterLink>
-        <RouterLink :to="{name:'nested'}">01-巢狀路由</RouterLink>
-        <RouterLink :to="{name:'lifeCircle'}">02-生命周期</RouterLink>
-        <RouterLink :to="{name:'variable'}">03-響應式變數</RouterLink>
-        <RouterLink :to="{name:'bind'}">04-資料綁定</RouterLink>
-        <RouterLink :to="{name:'if'}">05-條件渲染</RouterLink>
-        <RouterLink :to="{name:'loop'}">06-迴圈渲染</RouterLink>
-        <RouterLink :to="{name:'event'}">07-事件綁定</RouterLink>
-        <RouterLink :to="{name:'computed'}">08-計算屬性</RouterLink>
-        <RouterLink :to="{name:'watch'}">09-監聽</RouterLink>
-        <RouterLink :to="{name:'component'}">10-元件</RouterLink>
-        <RouterLink :to="{name:'env'}">11-全域變數</RouterLink>
-        <RouterLink :to="{name:'pinia'}">12-Pinia 狀態管理</RouterLink>
-        <RouterLink :to="{name:'axios'}">13-axios</RouterLink>
-
+        <RouterLink :to="{ name: 'routerQueryName', query: { keyword: 'switch5', page: 3 } }"
+          >01-路由參數傳遞-查詢參數(query)</RouterLink
+        >
+        <RouterLink :to="{ name: 'nested' }">01-巢狀路由</RouterLink>
+        <RouterLink :to="{ name: 'lifeCircle' }">02-生命周期</RouterLink>
+        <RouterLink :to="{ name: 'variable' }">03-響應式變數</RouterLink>
+        <RouterLink :to="{ name: 'bind' }">04-資料綁定</RouterLink>
+        <RouterLink :to="{ name: 'if' }">05-條件渲染</RouterLink>
+        <RouterLink :to="{ name: 'loop' }">06-迴圈渲染</RouterLink>
+        <RouterLink :to="{ name: 'event' }">07-事件綁定</RouterLink>
+        <RouterLink :to="{ name: 'computed' }">08-計算屬性</RouterLink>
+        <RouterLink :to="{ name: 'watch' }">09-監聽</RouterLink>
+        <RouterLink :to="{ name: 'component' }">10-元件</RouterLink>
+        <RouterLink :to="{ name: 'env' }">11-全域變數</RouterLink>
+        <RouterLink :to="{ name: 'pinia' }">12-Pinia 狀態管理</RouterLink>
+        <RouterLink :to="{ name: 'axios' }">13-axios</RouterLink>
       </nav>
     </div>
   </header>
   <main class="content">
-    <RouterView/>
+    <RouterView />
   </main>
 </template>
 
@@ -70,14 +71,12 @@ nav a:first-of-type {
   border: 0;
 }
 
- @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   header {
-    /* display: flex; */
+    display: flex;
     place-items: center;
-    /* padding-right: calc(var(--section-gap) / 2); */
+    padding-right: calc(var(--section-gap) / 2);
   }
-
-  header .wrapper { /* 改成 block 或 column 排列 */ display: block; }
 
   .logo {
     margin: 0 2rem 0 0;
@@ -93,8 +92,8 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
-  }}
+  }
+}
 </style>
