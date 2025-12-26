@@ -23,7 +23,7 @@ const router = createRouter({
       component: ()=> import('../views/Test.vue')
     },
     {
-      path: '/routerParams1/:id',
+      path: '/routerParams1/:id/:title',
       name: 'routerParams1',
       component: ()=> import('../views/Test.vue')
     },
@@ -114,7 +114,7 @@ const router = createRouter({
     // 一定要放最後
     { path: '/:pathMatch(.*)*',
       name:'notFound',
-      component:()=>import('../views/01-error404.vue') 
+      component:()=>import('../views/01-error404.vue')
     }
   ],
 })

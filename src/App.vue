@@ -1,6 +1,6 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -12,8 +12,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/routerParams">01-動態參數傳遞</RouterLink>
         <RouterLink to="/routerParams1/123">01-動態參數傳遞(123)</RouterLink>
         <RouterLink :to="{ name: 'routerQueryName', query: { keyword: 'switch5', page: 3 } }"
-          >01-路由參數傳遞-查詢參數(query)</RouterLink
-        >
+          >01-路由參數傳遞-查詢參數(query)
+        </RouterLink>
         <RouterLink :to="{ name: 'nested' }">01-巢狀路由</RouterLink>
         <RouterLink :to="{ name: 'lifeCircle' }">02-生命周期</RouterLink>
         <RouterLink :to="{ name: 'variable' }">03-響應式變數</RouterLink>

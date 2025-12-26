@@ -11,7 +11,7 @@ const datas = reactive([
 <template>
   <h2>06-迴圈渲染</h2>
   <div>
-    <span v-for="item in datas" v-bind:key="item.name">品項:{{ item.name }}<br /></span>
+    <span v-for="item in datas" :key="item.name">品項:{{ item.name }}<br /></span>
     <br />
     <span v-for="item in datas" v-bind:key="item.name">價格:{{ item.price }}<br /></span>
   </div>
@@ -24,4 +24,6 @@ const datas = reactive([
       >特價!!</span
     >
   </div>
+  <br />
+  <br />
 </template>
