@@ -31,7 +31,7 @@ const filteredComputed = computed(() => {
 </script>
 
 <template>
-  <h2>08-計算屬性</h2>
+  <h2>08- 計算屬性</h2>
   <div>
     類別:
     <select v-model="selectedCategory">
