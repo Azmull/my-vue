@@ -15,7 +15,7 @@ const datas = reactive([
 
 import ChildItem from '@/components/Child.vue'
 
-function handleAction1(par1, par2) {
+function doAction1(par1, par2) {
   alert('子元件通知' + par1 + par2)
 }
 
@@ -28,7 +28,7 @@ import SlotItem from '@/components/Slot.vue'
 <template>
   <h2>10-元件</h2>
   <div>
-    <ProductItem name="vue課程" price="100" note="111"> </ProductItem>
+    <ProductItem name="vue課程" price="123123" note="不會回傳" fdfg="子元件沒有定義"> </ProductItem>
   </div>
   <div>
     <h4>使用變數傳給子元件</h4>
@@ -46,7 +46,7 @@ import SlotItem from '@/components/Slot.vue'
     <h4>子元件通知父元件</h4>
     <!-- <ChildItem @do-action1=""></ChildItem> -->
     <!-- 這邊的handleAction1不能加小括號()，因為子元素有傳參數，如果加()代表是這個.vue檔案有傳參數 -->
-    <ChildItem @doAction1="handleAction1" @do-action2="handleAction2"></ChildItem>
+    <ChildItem @doAction1="doAction1" @do-action2="handleAction2"></ChildItem>
   </div>
 
   <br />
