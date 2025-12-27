@@ -30,7 +30,7 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header>
-  <main class="content">
+  <main class="content m-5">
     <RouterView />
   </main>
 </template>
