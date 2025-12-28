@@ -8,7 +8,7 @@ const prop = defineProps({
 </script>
 <template>
   <div>
-    <p>商品名稱: {{ prop.name }}</p>
-    <p>商品價格: {{ prop.price }}</p>
+    <div>商品名稱: {{ prop.name }}</div>
+    <div>商品價格: {{ prop.price }}</div>
   </div>
 </template>
