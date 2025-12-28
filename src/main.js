@@ -11,12 +11,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 const app = createApp(App)
 
-// app.use(createPinia())
+// app.use(createPinia()) 等同於下面2行
 const pinia = createPinia()
 pinia.use(piniaPersist)
 
-app.use(pinia)
-app.use(router)
+app.use(pinia) //註冊Pinia工具
+app.use(router) //註冊router工具
 
 window.js_global_title = '這是javascript全域變數'
 app.config.globalProperties.$propertyTitle='這是全域屬性變數'
